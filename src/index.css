@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Suisse Black";
-  src: url("/public/font/SuisseIntl-Black.otf");
+  src: url("/font/SuisseIntl-Black.otf");
 }
 
 @font-face {
   font-family: "Suisse Bold";
-  src: url("/public/font/SuisseIntl-Bold.otf");
+  src: url("/font/SuisseIntl-Bold.otf");
 }
 
 @font-face {
   font-family: "Suisse Semibold";
-  src: url("/public/font/SuisseIntl-SemiBold.otf");
+  src: url("/font/SuisseIntl-SemiBold.otf");
 }
 
 @font-face {
   font-family: "Suisse Regular";
-  src: url("/public/font/SuisseIntl-Regular.otf");
+  src: url("/font/SuisseIntl-Regular.otf");
 }
 
 :root {
