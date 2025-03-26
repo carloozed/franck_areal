@@ -19,7 +19,7 @@
 }
 
 .navitem svg {
-    height: 4rem;
+    height: calc(2.4rem + 1.5vw);
 }
 
 
