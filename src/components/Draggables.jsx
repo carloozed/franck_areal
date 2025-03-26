@@ -3,7 +3,11 @@ import React, { useRef } from 'react';
 import styles from './Draggables.module.css';
 import DraggableComponent from './DraggableComponent';
 
-import arrowCenter from '../assets/images/svg/arrowcenter.svg';
+import letscreate from '../assets/images/letscreate.png';
+import funnystuff from '../assets/images/funnystuff.png';
+import yellowleft from '../assets/images/yellowleft.png';
+import colorcircle from '../assets/images/colorcircle.png';
+import coolstuff from '../assets/images/coolstuff.png';
 
 export default function Draggables() {
   const containerRef = useRef(null);
@@ -12,22 +16,22 @@ export default function Draggables() {
     <section className={styles.container} ref={containerRef}>
       <div className={styles.relative}>
         <DraggableComponent>
-          <h1>Let's create our world in 6 days</h1>
+          <img src={funnystuff} />
         </DraggableComponent>
         <DraggableComponent>
-          <h1>Let's create our world in 6 days</h1>
+          <img src={yellowleft} />
         </DraggableComponent>
         <DraggableComponent>
-          <h1>Let's create our world in 6 days</h1>
+          <img src={colorcircle} />
         </DraggableComponent>
         <DraggableComponent>
-          <h1>Let's create our world in 6 days</h1>
+          <img src={coolstuff} />
         </DraggableComponent>
         <DraggableComponent>
-          <img src={arrowCenter} />
+          <img src={letscreate} />
         </DraggableComponent>
         <DraggableComponent>
-          <h1>Let's create our world in 6 days</h1>
+          <img src={letscreate} />
         </DraggableComponent>
       </div>
     </section>

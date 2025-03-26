@@ -6,6 +6,8 @@ import Physics2DPlugin from 'gsap/Physics2DPlugin';
 import { Draggable } from 'gsap/Draggable';
 import { useGSAP } from '@gsap/react';
 
+import styles from './DraggableComponent.module.css';
+
 gsap.registerPlugin(Draggable, useGSAP, Physics2DPlugin);
 
 export default function DraggableComponent({ children }) {
@@ -29,13 +31,13 @@ export default function DraggableComponent({ children }) {
     gsap.to(draggableRef.current, {
       duration: random(2, 3.8),
       rotate: 0,
-      y: window.innerHeight - 50,
+      y: window.innerHeight - 130,
       ease: `bounce.out(${random(1.8, 2.5)})`,
       delay: random(0, 1.2),
 
       onComplete: () => setIsDraggable(true),
     });
-  }, []); // Important: add dependency array
+  }, []);
 
   useGSAP(() => {
     if (isDraggable && draggableRef.current) {
@@ -47,7 +49,7 @@ export default function DraggableComponent({ children }) {
         type: 'x,y',
         bounds: {
           minX: 0,
-          maxX: window.innerWidth - 350,
+          maxX: window.innerWidth - 50,
           minY: 0,
           maxY: window.innerHeight - 50,
         },
@@ -57,7 +59,11 @@ export default function DraggableComponent({ children }) {
   }, [isDraggable]);
 
   return (
-    <div ref={draggableRef} style={{ position: 'absolute' }}>
+    <div
+      ref={draggableRef}
+      style={{ position: 'absolute' }}
+      className={styles.draggable}
+    >
       {children}
     </div>
   );
