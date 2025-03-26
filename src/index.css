@@ -31,13 +31,16 @@
 
 
   /* colors */
+
   --yellow: #FFFF00;
   --lightgreen: #00FF67;
   --violet: #675D75;
   --grey: #98979B;
+  --greengrey: #6A7260;
   --lightgrey: #EDEDED;
   --black: #000;
-
+  --white: #fff;
+  --pink: #FF7BAC;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
