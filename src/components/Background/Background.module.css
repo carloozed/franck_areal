@@ -5,16 +5,20 @@
     left: 0;
     min-height: 100svh;
     min-width: 100svw;
+    background-color: red;
 }
 
 .imageContainer {
     position: relative;
 }
 
+.bg {
+    background-color: blue;
+    height: 100%;
+}
 
 
 .background img {
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
-    object-fit: contain;
 }
