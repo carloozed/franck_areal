@@ -21,17 +21,17 @@ export default function DraggableComponent({ children }) {
     // Set initial position
     gsap.set(draggableRef.current, {
       x: random(0, window.innerWidth - 460),
-      y: random(0, window.innerHeight - 340),
+      y: -500,
       rotate: random(-60, 60),
     });
 
     // Create falling animation
     gsap.to(draggableRef.current, {
-      duration: random(1, 2.5),
+      duration: random(2, 3.8),
       rotate: 0,
       y: window.innerHeight - 50,
-      ease: `bounce.out(${random(1.5, 2)})`,
-      delay: random(0.6, 1.8),
+      ease: `bounce.out(${random(1.8, 2.5)})`,
+      delay: random(0, 1.2),
 
       onComplete: () => setIsDraggable(true),
     });

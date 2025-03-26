@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424.2 424.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e30613;
+      }
+
+      .cls-2 {
+        fill: #e6007e;
+      }
+
+      .cls-3 {
+        fill: #009640;
+      }
+
+      .cls-4 {
+        fill: #009fe3;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1">
+    <circle class="cls-2" cx="212.1" cy="212.1" r="212.1"/>
+    <circle class="cls-1" cx="212.1" cy="212.1" r="162.9"/>
+    <circle class="cls-3" cx="212.1" cy="212.1" r="113.79"/>
+    <circle class="cls-4" cx="212.1" cy="212.1" r="64.68"/>
+  </g>
+</svg>

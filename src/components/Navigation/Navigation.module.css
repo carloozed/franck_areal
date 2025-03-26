@@ -1,0 +1,46 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100svh;
+    width: 100svw;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.navcontainer {
+    height: 100%;
+    width: 100%;
+}
+
+.navitem {
+    position: absolute;
+}
+
+.navitem svg {
+    height: 4rem;
+}
+
+
+.navitem:nth-of-type(1) {
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.navitem:nth-of-type(2) {
+    transform: translateY(-50%) rotate(-90deg);
+    top: 50%;
+    left: -1.8rem;
+}
+
+.navitem:nth-of-type(3) {
+    transform: translateX(-50%) rotate(-180deg);
+    left: 50%;
+    bottom: 0;
+}
+
+.navitem:nth-of-type(4) {
+    transform: translateY(-50%) rotate(90deg);
+    top: 50%;
+    right: -1.8rem;
+}

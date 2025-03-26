@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.3 126.43">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #98979b;
+      }
+
+      .cls-2 {
+        font-family: SuisseIntl-Bold, 'Suisse Int'l';
+        font-size: 38.77px;
+        font-weight: 700;
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: #ff0;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1">
+    <g>
+      <rect class="cls-3" x="-30.88" y="30.88" width="126.43" height="64.67" transform="translate(95.55 30.88) rotate(90)"/>
+      <rect x="15.58" y="32.81" width="32.85" height="60.81" transform="translate(95.22 31.21) rotate(90)"/>
+      <polygon class="cls-1" points="22.62 79.64 1.6 62.98 22.62 46.79 22.62 79.64"/>
+      <text class="cls-2" transform="translate(32.87 48.19) rotate(90)"><tspan x="0" y="0">G</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.34 387.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #00ff67;
+      }
+    </style>
+  </defs>
+  <g id="top_fondo" data-name="top fondo">
+    <g>
+      <rect x="159.48" y="51.6" width="32.85" height="32.85"/>
+      <rect x="120.02" y="0" width="32.85" height="32.85"/>
+      <rect x="40.68" y="0" width="32.85" height="32.85"/>
+      <rect x="0" y="51.6" width="32.85" height="32.85"/>
+      <line class="cls-1" x1="27.29" y1="68.03" x2="166.24" y2="68.03"/>
+      <polyline class="cls-1" points="125.55 27.32 96.76 68.03 68.01 27.32"/>
+      <line class="cls-1" x1="96.78" y1="362.09" x2="96.77" y2="68.03"/>
+      <rect x="80.35" y="354.28" width="32.85" height="32.85"/>
+      <polygon class="cls-2" points="113.21 365.46 96.54 386.47 80.35 365.46 113.21 365.46"/>
+      <circle class="cls-2" cx="166.24" cy="68.03" r="5.53"/>
+      <circle class="cls-2" cx="125.55" cy="27.32" r="5.53"/>
+      <circle class="cls-2" cx="68.01" cy="27.32" r="5.53"/>
+      <circle class="cls-2" cx="27.29" cy="68.03" r="5.53"/>
+    </g>
+  </g>
+</svg>

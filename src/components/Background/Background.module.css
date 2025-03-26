@@ -1,0 +1,12 @@
+.bg {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100svh;
+    width: 100svw;
+}
+
+.imageContainer {
+    position: relative;
+}
