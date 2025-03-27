@@ -12,6 +12,7 @@ import stuff from '../assets/images/stuff.png';
 import omgstuff from '../assets/images/omgstuff.png';
 import funnythingi from '../assets/images/funnythingi.png';
 import circlesetc from '../assets/images/circlesetc.png';
+import logo from '../assets/images/logo.png';
 
 export default function Draggables() {
   const containerRef = useRef(null);
@@ -45,6 +46,9 @@ export default function Draggables() {
         </DraggableComponent>
         <DraggableComponent>
           <img src={circlesetc} />
+        </DraggableComponent>
+        <DraggableComponent>
+          <img src={logo} />
         </DraggableComponent>
       </div>
     </section>

@@ -49,7 +49,9 @@ export default function Navigation({ ...navigationProps }) {
           onMouseEnter={() => setNavigationItemHovered('insta')}
           onMouseLeave={() => setNavigationItemHovered('')}
         >
-          <Right />
+          <a href="https://www.instagram.com/omg_franck/" target="_blank">
+            <Right />
+          </a>
         </div>
       </div>
     </nav>
