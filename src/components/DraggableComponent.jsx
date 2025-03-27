@@ -33,7 +33,7 @@ export default function DraggableComponent({ children }) {
       rotate: 0,
       y: window.innerHeight - 130,
       ease: `bounce.out(${random(1.8, 3.5)})`,
-      delay: random(3, 18),
+      delay: random(1, 18),
 
       onComplete: () => setIsDraggable(true),
     });
