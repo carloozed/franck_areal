@@ -9,7 +9,7 @@ import Cursor from './components/Cursor/Cursor';
 import Content from './components/Content/Content';
 
 function App() {
-  const [backgroundClick, setBackgroundClick] = useState(false);
+  const [backgroundClick, setBackgroundClick] = useState(0);
   const [navigationItemHovered, setNavigationItemHovered] = useState('');
   const [activeNavigation, setActiveNavigation] = useState('');
 
@@ -19,10 +19,12 @@ function App() {
 
   const backgroundProps = {
     backgroundClick: backgroundClick,
+    setBackgroundClick: setBackgroundClick,
   };
 
   const navigationProps = {
     setNavigationItemHovered: setNavigationItemHovered,
+    backgroundClick: backgroundClick,
     setBackgroundClick: setBackgroundClick,
     activeNavigation: activeNavigation,
     setActiveNavigation: setActiveNavigation,

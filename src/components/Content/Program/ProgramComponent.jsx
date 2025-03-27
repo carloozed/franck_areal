@@ -21,7 +21,10 @@ export default function ProgramComponent({ ...contentProps }) {
       </div>
       <div className={styles.events}>
         {program.map((day, index) => (
-          <div className={styles.event} key={index}>
+          <div
+            className={`${styles.event} ${day.blur && styles.blurry}`}
+            key={index}
+          >
             <div className={styles.leftSide}>
               <h2>{day.date}</h2>
             </div>

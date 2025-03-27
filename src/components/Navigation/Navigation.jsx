@@ -13,6 +13,7 @@ export default function Navigation({ ...navigationProps }) {
     setBackgroundClick,
     activeNavigation,
     setActiveNavigation,
+    backgroundClick,
   } = navigationProps;
   return (
     <nav className={styles.nav}>
@@ -21,7 +22,7 @@ export default function Navigation({ ...navigationProps }) {
           className={styles.navitem}
           onMouseEnter={() => setNavigationItemHovered('top')}
           onMouseLeave={() => setNavigationItemHovered('')}
-          onClick={() => setBackgroundClick(true)}
+          onClick={() => setBackgroundClick(backgroundClick + 1)}
         >
           <Top />
         </div>

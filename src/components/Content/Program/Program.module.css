@@ -64,9 +64,13 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     width: 66%;
-    background-color: red;
-
 }
+
+.blurry .rightSide * {
+    filter: blur(8px);
+}
+
+
 
 .leftSide {
 

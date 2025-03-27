@@ -10,6 +10,7 @@ const program = [
       ['The Velvet Sound', '19:00-20:30'],
       ['Neon Nights', '23:00-00:30'],
     ],
+    blur: true,
   },
   {
     day: 'Friday',
@@ -22,6 +23,7 @@ const program = [
       ['Urban Echo', '18:00-19:30'],
       ['Digital Horizon', '23:30-01:00'],
     ],
+    blur: false,
   },
   {
     day: 'Saturday',
@@ -34,6 +36,7 @@ const program = [
       ['Smooth Operators', '19:00-20:30'],
       ['Cosmic Groove', '23:00-00:30'],
     ],
+    blur: true,
   },
   {
     day: 'Sunday',
@@ -46,6 +49,7 @@ const program = [
       ['Mystic Flow', '18:00-19:30'],
       ['Bass Droppers', '23:30-01:00'],
     ],
+    blur: false,
   },
   {
     day: 'Monday',
@@ -58,6 +62,7 @@ const program = [
       ['Soul Sisters', '19:00-20:30'],
       ['Midnight Pulse', '23:00-00:30'],
     ],
+    blur: false,
   },
 ];
 
