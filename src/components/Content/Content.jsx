@@ -10,10 +10,11 @@ export default function Content() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
+        {' '}
+        <ProgramComponent />
         <div className={styles.main}>
           <img src={main} alt="Frank Areal" />
         </div>{' '}
-        <ProgramComponent />
       </div>
     </div>
   );
