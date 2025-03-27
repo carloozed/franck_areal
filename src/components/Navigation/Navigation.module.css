@@ -16,6 +16,7 @@
 .navitem {
     position: absolute;
     pointer-events: all;
+    cursor: pointer;
 }
 
 .navitem svg {
