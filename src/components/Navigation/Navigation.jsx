@@ -8,7 +8,12 @@ import Bottom from './components/Bottom';
 import Right from './components/Right';
 
 export default function Navigation({ ...navigationProps }) {
-  const { setNavigationItemHovered, setBackgroundClick } = navigationProps;
+  const {
+    setNavigationItemHovered,
+    setBackgroundClick,
+    activeNavigation,
+    setActiveNavigation,
+  } = navigationProps;
   return (
     <nav className={styles.nav}>
       <div className={styles.navcontainer}>
@@ -24,6 +29,11 @@ export default function Navigation({ ...navigationProps }) {
           className={styles.navitem}
           onMouseEnter={() => setNavigationItemHovered('program')}
           onMouseLeave={() => setNavigationItemHovered('')}
+          onClick={() => {
+            activeNavigation === 'program'
+              ? setActiveNavigation('')
+              : setActiveNavigation('program');
+          }}
         >
           <Left />
         </div>

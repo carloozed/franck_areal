@@ -11,6 +11,7 @@ import Content from './components/Content/Content';
 function App() {
   const [backgroundClick, setBackgroundClick] = useState(false);
   const [navigationItemHovered, setNavigationItemHovered] = useState('');
+  const [activeNavigation, setActiveNavigation] = useState('');
 
   const cursorProps = {
     navigationItemHovered: navigationItemHovered,
@@ -23,6 +24,13 @@ function App() {
   const navigationProps = {
     setNavigationItemHovered: setNavigationItemHovered,
     setBackgroundClick: setBackgroundClick,
+    activeNavigation: activeNavigation,
+    setActiveNavigation: setActiveNavigation,
+  };
+
+  const contentProps = {
+    activeNavigation: activeNavigation,
+    setActiveNavigation: setActiveNavigation,
   };
 
   return (
@@ -30,7 +38,7 @@ function App() {
       <div className={StyleSheet.main}>
         <Cursor {...cursorProps} />
         <Navigation {...navigationProps} />
-        <Content />
+        <Content {...contentProps} />
         <Draggables />
         <Background {...backgroundProps} />
       </div>

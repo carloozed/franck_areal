@@ -6,12 +6,11 @@ import main from '../../assets/images/maintitle.png';
 
 import ProgramComponent from './Program/ProgramComponent';
 
-export default function Content() {
+export default function Content({ ...contentProps }) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {' '}
-        <ProgramComponent />
+        <ProgramComponent {...contentProps} />
         <div className={styles.main}>
           <img src={main} alt="Frank Areal" />
         </div>{' '}

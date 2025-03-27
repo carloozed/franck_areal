@@ -6,13 +6,19 @@ import program from './program';
 
 import programImage from '../../../assets/images/program_1.png';
 
-export default function ProgramComponent() {
-  return (
-    <div className={styles.container}>
-      <div className={styles.titleContainer}>
-        <img src={programImage} />
+export default function ProgramComponent({ ...contentProps }) {
+  const { activeNavigation, setActiveNavigation } = contentProps;
 
-        <img src={programImage} />
+  return (
+    <div
+      className={`${styles.container} ${
+        activeNavigation === 'program' ? styles.open : ''
+      }`}
+      onClick={() => activeNavigation === 'program' && setActiveNavigation('')}
+    >
+      <div className={styles.titleContainer}>
+        <img src={programImage} onClick={() => setActiveNavigation('')} />
+        <img src={programImage} onClick={() => setActiveNavigation('')} />
       </div>
       <div className={styles.events}>
         {program.map((day, index) => (
@@ -36,6 +42,10 @@ export default function ProgramComponent() {
             </div>
           </div>
         ))}
+      </div>{' '}
+      <div className={styles.titleContainer}>
+        <img src={programImage} onClick={() => setActiveNavigation('')} />
+        <img src={programImage} onClick={() => setActiveNavigation('')} />
       </div>
     </div>
   );
