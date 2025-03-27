@@ -14,7 +14,6 @@ export default function ProgramComponent({ ...contentProps }) {
       className={`${styles.container} ${
         activeNavigation === 'program' ? styles.open : ''
       }`}
-      onClick={() => activeNavigation === 'program' && setActiveNavigation('')}
     >
       <div className={styles.titleContainer}>
         <img src={programImage} onClick={() => setActiveNavigation('')} />
