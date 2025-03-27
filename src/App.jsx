@@ -6,6 +6,7 @@ import Draggables from './components/Draggables';
 import Navigation from './components/Navigation/Navigation';
 import Background from './components/Background/Background';
 import Cursor from './components/Cursor/Cursor';
+import Content from './components/Content/Content';
 
 function App() {
   const [backgroundClick, setBackgroundClick] = useState(false);
@@ -26,10 +27,13 @@ function App() {
 
   return (
     <>
-      <Cursor {...cursorProps} />
-      <Navigation {...navigationProps} />
-      <Draggables />
-      <Background {...backgroundProps} />
+      <div className={StyleSheet.main}>
+        <Cursor {...cursorProps} />
+        <Navigation {...navigationProps} />
+        <Content />
+        <Draggables />
+        <Background {...backgroundProps} />
+      </div>
     </>
   );
 }

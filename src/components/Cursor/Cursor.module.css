@@ -18,7 +18,7 @@
     padding: '100px',
 }
 
-.fullWidth {}
+
 
 .title {
     margin: 0;
@@ -28,6 +28,7 @@
     white-space: nowrap;
     opacity: 0;
     font-size: 2rem;
+    color: var(--greengrey);
 
 }
 

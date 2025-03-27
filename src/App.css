@@ -2,5 +2,8 @@
   width: 100vw;
   margin: 0 auto;
   width: fit-content;
+}
 
+.main {
+  position: relative;
 }
