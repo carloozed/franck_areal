@@ -20,6 +20,7 @@
 
 .navitem svg {
     height: calc(2.4rem + 1.5vw);
+    pointer-events: all;
 }
 
 

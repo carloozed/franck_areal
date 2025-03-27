@@ -4,7 +4,8 @@ import styles from './Background.module.css';
 
 import bgFirst from '../../assets/images/bg_first.png';
 
-export default function Background() {
+export default function Background({ ...backgroundProps }) {
+  console.log(backgroundProps);
   return (
     <div className={styles.bg}>
       <div className={styles.imageContainer}>

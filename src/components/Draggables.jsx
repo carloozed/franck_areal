@@ -30,9 +30,6 @@ export default function Draggables() {
         <DraggableComponent>
           <img src={letscreate} />
         </DraggableComponent>
-        <DraggableComponent>
-          <img src={letscreate} />
-        </DraggableComponent>
       </div>
     </section>
   );
