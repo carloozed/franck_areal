@@ -5,12 +5,13 @@ import styles from './Background.module.css';
 import bgFirst from '../../assets/images/bg_first.png';
 import bgSecond from '../../assets/images/bg2.png';
 import bgThird from '../../assets/images/background.png';
+import bgFourth from '../../assets/images/letscreate.png';
 
 export default function Background({ ...backgroundProps }) {
   const [url, setUrl] = useState(bgFirst);
   const { backgroundClick, setBackgroundClick } = backgroundProps;
 
-  const backgroundArray = [bgFirst, bgSecond, bgThird];
+  const backgroundArray = [bgFirst, bgSecond, bgThird, bgFourth];
 
   useEffect(() => {
     if (backgroundClick > backgroundArray.length - 1) {
@@ -22,6 +23,8 @@ export default function Background({ ...backgroundProps }) {
       setUrl(bgSecond);
     } else if (backgroundClick === 2) {
       setUrl(bgThird);
+    } else if (backgroundClick === 3) {
+      setUrl(bgFourth);
     }
   }, [backgroundClick, setBackgroundClick]);
   return (
