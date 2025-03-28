@@ -1,7 +1,7 @@
 const program = [
   {
     day: 'Thursday',
-    date: '10.04',
+    date: '16.06',
     label: 'OPENING NIGHT',
     acts: [
       ['The Midnight Echo', '18:00-19:30'],
@@ -14,7 +14,7 @@ const program = [
   },
   {
     day: 'Friday',
-    date: '11.04',
+    date: '17.06',
     label: 'RHYTHM FUSION',
     acts: [
       ['Crimson Skies', '17:30-19:00'],
@@ -27,7 +27,7 @@ const program = [
   },
   {
     day: 'Saturday',
-    date: '12.04',
+    date: '18.06',
     label: 'ELECTRO PARADISE',
     acts: [
       ['Sunset Riders', '18:00-19:30'],
@@ -40,7 +40,7 @@ const program = [
   },
   {
     day: 'Sunday',
-    date: '13.04',
+    date: '19.06',
     label: 'SONIC VOYAGE',
     acts: [
       ['Silent Whispers', '17:30-19:00'],
@@ -53,7 +53,7 @@ const program = [
   },
   {
     day: 'Monday',
-    date: '14.04',
+    date: '20.06',
     label: 'GRAND FINALE',
     acts: [
       ['Emerald City', '18:00-19:30'],
