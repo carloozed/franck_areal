@@ -1,55 +1,38 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import styles from './Draggables.module.css';
 import DraggableComponent from './DraggableComponent';
 
-import funnystuff from '../assets/images/funnystuff.png';
-import yellowleft from '../assets/images/yellowleft.png';
-import colorcircle from '../assets/images/colorcircle.png';
-import coolstuff from '../assets/images/coolstuff.png';
-import stringsetc from '../assets/images/stringsetc.png';
-import stuff from '../assets/images/stuff.png';
-import omgstuff from '../assets/images/omgstuff.png';
-import funnythingi from '../assets/images/funnythingi.png';
-import circlesetc from '../assets/images/circlesetc.png';
-import logo from '../assets/images/logo.png';
+import { imageArray } from './imageArray';
 
 export default function Draggables() {
   const containerRef = useRef(null);
+  const [dropDistance, setDropDistance] = useState(0);
+
+  const updateDropDistance = () => {
+    const isMobile = window.innerWidth < 768;
+    setDropDistance(isMobile ? 85 : 130);
+  };
+
+  useEffect(() => {
+    updateDropDistance();
+
+    window.addEventListener('resize', updateDropDistance);
+
+    return () => {
+      window.removeEventListener('resize', updateDropDistance);
+    };
+  }, []);
 
   return (
     <section className={styles.container} ref={containerRef}>
       <div className={styles.relative}>
-        <DraggableComponent>
-          <img src={funnystuff} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={yellowleft} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={colorcircle} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={coolstuff} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={stringsetc} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={stuff} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={omgstuff} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={funnythingi} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={circlesetc} />
-        </DraggableComponent>
-        <DraggableComponent>
-          <img src={logo} />
-        </DraggableComponent>
+        {dropDistance !== 0 &&
+          imageArray.map((image, index) => (
+            <DraggableComponent key={index} dropDistance={dropDistance}>
+              <img src={image} alt={`Dropimage ${index}`} />
+            </DraggableComponent>
+          ))}
       </div>
     </section>
   );

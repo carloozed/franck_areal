@@ -10,7 +10,7 @@ import styles from './DraggableComponent.module.css';
 
 gsap.registerPlugin(Draggable, useGSAP, Physics2DPlugin);
 
-export default function DraggableComponent({ children }) {
+export default function DraggableComponent({ children, index, dropDistance }) {
   const draggableRef = useRef(null);
   const [isDraggable, setIsDraggable] = useState(false);
   const dragInstance = useRef(null);
@@ -20,31 +20,26 @@ export default function DraggableComponent({ children }) {
   useGSAP(() => {
     if (draggableRef.current === null) return;
 
-    // Set initial position
     gsap.set(draggableRef.current, {
       x: random(0, window.innerWidth - 100),
-      y: random(0, window.innerHeight - 100),
+      y: random(0, window.innerHeight - 250),
       rotate: random(-190, 190),
     });
 
-    // Create falling animation
     gsap.to(draggableRef.current, {
       duration: random(1.5, 2.8),
       rotate: 0,
-      y: window.innerHeight - 130,
+      y: window.innerHeight - dropDistance,
       ease: `bounce.out(${random(1.8, 3.5)})`,
-      delay: random(1, 18),
-
+      delay: random(2, 18),
       onComplete: () => setIsDraggable(true),
     });
-  }, []);
+  }, [dropDistance]);
 
   useGSAP(() => {
     if (isDraggable && draggableRef.current) {
-      // Kill any ongoing animations
       gsap.killTweensOf(draggableRef.current);
 
-      // Create draggable instance
       dragInstance.current = Draggable.create(draggableRef.current, {
         type: 'x,y',
         bounds: {
@@ -63,6 +58,7 @@ export default function DraggableComponent({ children }) {
       ref={draggableRef}
       style={{ position: 'absolute' }}
       className={styles.draggable}
+      key={`Dropimage ${index}`}
     >
       {children}
     </div>

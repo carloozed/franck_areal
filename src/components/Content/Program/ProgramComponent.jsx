@@ -29,7 +29,6 @@ export default function ProgramComponent({ ...contentProps }) {
               <h2>{day.date}</h2>
             </div>
             <div className={styles.rightSide}>
-              {' '}
               <h3>{day.label}</h3>
               <div>
                 {day.acts.map((act, index) => {

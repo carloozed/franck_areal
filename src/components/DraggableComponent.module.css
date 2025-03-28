@@ -1,5 +1,23 @@
 .draggable {}
 
 .draggable img {
-    height: 8rem;
+    height: calc(4rem + 5vw);
 }
+
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 48rem) {
+    .draggable img {}
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 48rem) and (max-width: 74rem) {}
+
+
+@media (min-width: 48rem) and (max-width: 74rem) and (orientation: portrait) {}

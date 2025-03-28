@@ -56,32 +56,16 @@
 
 /* Mobile */
 @media (max-width: 48rem) {
-    .navitem svg {
-        height: 2rem;
-    }
-
-
-    .navitem:nth-of-type(1) {
-        transform: translateX(-50%);
-        left: 50%;
-    }
 
     .navitem:nth-of-type(2) {
-        transform: translateY(-50%) rotate(-90deg);
-        top: 50%;
-        left: -0.9rem;
+
+        left: -1.1rem;
     }
 
-    .navitem:nth-of-type(3) {
-        transform: translateX(-50%) rotate(-180deg);
-        left: 50%;
-        bottom: 0;
-    }
 
     .navitem:nth-of-type(4) {
-        transform: translateY(-50%) rotate(90deg);
-        top: 50%;
-        right: -0.9rem;
+
+        right: -1.1rem;
     }
 }
 
