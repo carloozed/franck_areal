@@ -15,6 +15,7 @@ export default function ProgramComponent({ ...contentProps }) {
         activeNavigation === 'program' ? styles.open : ''
       }`}
     >
+      {/* <div className={styles.content}> */}
       <div className={styles.titleContainer}>
         <img src={programImage} onClick={() => setActiveNavigation('')} />
         <img src={programImage} onClick={() => setActiveNavigation('')} />
@@ -48,6 +49,7 @@ export default function ProgramComponent({ ...contentProps }) {
         <img src={programImage} onClick={() => setActiveNavigation('')} />
         <img src={programImage} onClick={() => setActiveNavigation('')} />
       </div>
+      {/* </div> */}
     </div>
   );
 }

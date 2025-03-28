@@ -22,7 +22,7 @@
 
 .container h2 {
     color: var(--lightgreen);
-    font-size: 3rem;
+    font-size: calc(1.5rem + 2vw);
 }
 
 .titleContainer {
@@ -57,7 +57,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-
 }
 
 .event {
@@ -120,3 +119,113 @@
     font-family: var(--bold-font);
     text-transform: uppercase;
 }
+
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 48rem) {
+    .container {
+        padding: 0 calc(1.5rem + 6vw);
+        display: flex;
+        gap: calc((2rem + 4vw) / 8);
+        opacity: 0;
+        transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+        pointer-events: none;
+        overflow-y: scroll !important;
+    }
+
+
+    .open {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+
+    .container h2 {
+        font-size: calc(1rem + 1.5vh);
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+    }
+
+
+
+    .titleContainer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .titleContainer img {
+
+        padding: 0.25rem 0;
+        background-color: var(--pink);
+    }
+
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        gap: calc((2rem + 4vw) / 8);
+    }
+
+    .event {
+        display: grid;
+        grid-template-columns: 0.25fr 1fr;
+        width: 100%;
+    }
+
+    .blurry .rightSide * {
+        filter: blur(8px);
+    }
+
+    .leftSide {
+        display: flex;
+        align-items: center;
+    }
+
+    .leftSide:nth-of-type(1) {
+        background-color: var(--pink);
+    }
+
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+        gap: calc((2rem + 5vw) / 15);
+        padding: calc((2rem + 5vw) / 15);
+    }
+
+    .rightSide h3 {
+        background-color: var(--lightgreen);
+        width: fit-content;
+        color: var(--pink);
+        font-size: calc(0.4rem + 0.8vh);
+    }
+
+    .act {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .act h4 {
+        font-size: calc(0.4rem + 0.6vh);
+    }
+
+    .actName {
+        font-family: var(--regular-font);
+        text-transform: uppercase;
+    }
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 48rem) and (max-width: 74rem) {}
+
+
+@media (min-width: 48rem) and (max-width: 74rem) and (orientation: portrait) {}
