@@ -1,0 +1,105 @@
+.container {
+    background-color: transparent;
+    padding: 0 calc((2rem + 4vw) * 1.5);
+    position: fixed;
+    z-index: 2;
+    min-height: 100svh;
+    width: 100svw;
+    display: flex;
+    gap: calc((2rem + 4vw) / 4);
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    pointer-events: all;
+    background-color: var(--grey);
+    overflow: scroll;
+
+}
+
+.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container h3 {
+    color: var(--yellow);
+}
+
+.container:nth-of-type(2) h3 {
+    text-align: right;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc((2rem + 4vw) / 2);
+    height: 100%;
+}
+
+.content a {
+    text-transform: uppercase;
+    color: var(--pink);
+    border: 0.5px solid var(--pink)
+}
+
+.section a span {
+    display: inline-block;
+    transform: translateX(-4px) translateY(-1px) rotate(-45deg)
+}
+
+.content p {
+    text-align: justify;
+}
+
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: calc((2rem + 4vw) / 4);
+}
+
+
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 48rem) {
+    .container {
+        padding: 0 calc(1.5rem + 6vw);
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+        pointer-events: none;
+        overflow-y: scroll !important;
+    }
+
+
+    .open {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+
+
+
+
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 48rem) and (max-width: 74rem) {}
+
+
+@media (min-width: 48rem) and (max-width: 74rem) and (orientation: portrait) {}

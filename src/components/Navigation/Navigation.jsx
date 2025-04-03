@@ -42,6 +42,11 @@ export default function Navigation({ ...navigationProps }) {
           className={styles.navitem}
           onMouseEnter={() => setNavigationItemHovered('about')}
           onMouseLeave={() => setNavigationItemHovered('')}
+          onClick={() => {
+            activeNavigation === 'about'
+              ? setActiveNavigation('')
+              : setActiveNavigation('about');
+          }}
         >
           <Bottom />
         </div>

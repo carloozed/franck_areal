@@ -56,6 +56,11 @@
   font-family: var(--regular-font);
 }
 
+*::selection {
+  color: var(--pink);
+  background-color: var(--greengrey);
+}
+
 body {
   overflow: hidden;
   min-height: 100svh;
@@ -66,7 +71,6 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   font-family: var(--bold-font);
-  letter-spacing: -3px;
   color: var(--lightgreen);
 }
 
