@@ -1,7 +1,7 @@
 const aboutContent = [
   {
     lang: 'de',
-    title: `OMG FRANCK! Let's create our world in six days`,
+    title: `OMG INFO!`,
     first_text: `Diese neue Plattform vereint Talente aus Musik, Radio, Kunst/Performances und (Fashion-)Design, Gastronomie und lädt zu einem immersiven Erlebnis auf dem FRANCK AREAL in Basel ein. Parallel zur Art Basel findet dieses einwöchige Event mitten in einer höchst spannenden Umgebung statt. Das ehemalige Industrie-Areal wird seit der Eröffnung des Tanzhaus Basel im Herbst 2024 immer mehr zu einem zentralen Ort für Tanz, kreatives Schaffen und nachhaltige Entwicklung in Basel.`,
     second_text: `OMG Franck! ist als eine gemeinsame Idee von <a href="https://radiox.ch/" target="_blank">Radio X Basel <span>→</span></a>, <a href="https://www.franckareal.ch/" target="_blank">Franck Areal <span>→</span></a>, dem Design-Studio <a href="https://ozelot.ltd/" target="_blank">Ozelot Studios <span>→</span></a> sowie dem Gastronomie-Kollektiv No Chefs Studios entstanden. Ziel ist es, während einer Woche gemeinsam mit den Künstler:innen, Designer:innen, Köch:innen, DJs und Labels ein «Kollektiv der Kollektive» zu gründen. Wir wollen in sechs Tagen einen Ort der respektvollen Begegnung und gegenseitigen Inspiration erschaffen. Bereits in den frühen 1990ern wurden urbane Freiräume in Orte für kreative Entfaltung verwandelt. Verlassenen Räumen wurde neues Leben eingehaucht. Let’s create our world in six days. `,
     date: '16. bis 21.06.2025',
