@@ -4,7 +4,7 @@ import styles from './AboutComponent.module.css';
 import aboutContent from './about';
 
 export default function AboutComponent({ ...contentProps }) {
-  const { activeNavigation, setActiveNavigation } = contentProps;
+  const { activeNavigation } = contentProps;
 
   useEffect(() => {
     console.log(activeNavigation);
