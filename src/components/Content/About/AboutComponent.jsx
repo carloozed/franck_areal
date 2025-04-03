@@ -16,7 +16,6 @@ export default function AboutComponent({ ...contentProps }) {
         activeNavigation === 'about' ? styles.open : ''
       }`}
     >
-      {' '}
       <h1>{aboutContent[0].title}</h1>
       <div className={styles.content}>
         {aboutContent.map((section, index) => (

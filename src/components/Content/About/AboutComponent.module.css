@@ -100,7 +100,7 @@
     }
 
     .container h3 {
-        color: var(--yellow);
+        color: var(--pink);
     }
 
     .container:nth-of-type(2) h3 {
@@ -125,7 +125,7 @@
 
     .section a span {
         display: inline-block;
-        transform: translateX(-4px) translateY(-1px) rotate(-45deg)
+        transform: translateX(-2px) translateY(-1px) rotate(-45deg)
     }
 
     .content p {
