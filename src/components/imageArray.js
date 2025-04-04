@@ -1,23 +1,33 @@
-import yellowleft from '../assets/images/yellowleft.png';
-import colorcircle from '../assets/images/colorcircle.png';
-import stringsetc from '../assets/images/stringsetc.png';
-import stuff from '../assets/images/stuff.png';
-import omgstuff from '../assets/images/omgstuff.png';
-import funnythingi from '../assets/images/funnythingi.png';
-import circlesetc from '../assets/images/circlesetc.png';
-import logo from '../assets/images/logo.png';
-import nice from '../assets/images/nice.png';
-import weird from '../assets/images/weird.png';
+import radiox from '../assets/images/fallimages/radiox.webp';
+import bluerednice from '../assets/images/fallimages/bluerednice.webp';
+import dk_2 from '../assets/images/fallimages/dk_2.webp';
+import grey_center from '../assets/images/fallimages/grey_center.webp';
+import omgblackred from '../assets/images/fallimages/omgblackred.webp';
+import lilanice_2 from '../assets/images/fallimages/lilanice_2.webp';
+import omg from '../assets/images/fallimages/omg.webp';
+import omgblue from '../assets/images/fallimages/omgblue.webp';
+import omggrey from '../assets/images/fallimages/omggrey.webp';
+import bluenice from '../assets/images/fallimages/bluenice.webp';
+import omgblueblue from '../assets/images/fallimages/omgblueblue.webp';
+import asset_14 from '../assets/images/fallimages/asset_14.webp';
+import asset_17 from '../assets/images/fallimages/asset_17.webp';
+import omgfyellow from '../assets/images/fallimages/omgfyellow.webp';
+import dk from '../assets/images/fallimages/dk.webp';
 
 export const imageArray = [
-  yellowleft,
-  colorcircle,
-  stringsetc,
-  stuff,
-  omgstuff,
-  funnythingi,
-  circlesetc,
-  logo,
-  nice,
-  weird,
+  radiox,
+  bluerednice,
+  dk_2,
+  grey_center,
+  omgblackred,
+  lilanice_2,
+  omg,
+  omgblue,
+  omggrey,
+  bluenice,
+  omgblueblue,
+  asset_14,
+  asset_17,
+  omgfyellow,
+  dk,
 ];
