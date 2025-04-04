@@ -13,13 +13,24 @@ import asset_8 from '../../assets/images/bg/asset_7.webp';
 import asset_9 from '../../assets/images/bg/asset_8.webp';
 import asset_10 from '../../assets/images/bg/asset_9.webp';
 
+import asset_1_mobile from '../../assets/images/bg/mobile/asset_mobile.webp';
+import asset_2_mobile from '../../assets/images/bg/mobile/asset_1_mobile.webp';
+import asset_3_mobile from '../../assets/images/bg/mobile/asset_2_mobile.webp';
+import asset_4_mobile from '../../assets/images/bg/mobile/asset_3_mobile.webp';
+import asset_5_mobile from '../../assets/images/bg/mobile/asset_4_mobile.webp';
+import asset_6_mobile from '../../assets/images/bg/mobile/asset_5_mobile.webp';
+import asset_7_mobile from '../../assets/images/bg/mobile/asset_6_mobile.webp';
+import asset_8_mobile from '../../assets/images/bg/mobile/asset_7_mobile.webp';
+import asset_9_mobile from '../../assets/images/bg/mobile/asset_8_mobile.webp';
+import asset_10_mobile from '../../assets/images/bg/mobile/asset_9_mobile.webp';
+
 export default function Background({ ...backgroundProps }) {
   const [url, setUrl] = useState(asset_1);
+  const [isMobile, setIsMobile] = useState(false);
   const { backgroundClick, setBackgroundClick } = backgroundProps;
 
   const backgroundArray = [
     asset_1,
-    asset_2,
     asset_2,
     asset_3,
     asset_4,
@@ -28,39 +39,53 @@ export default function Background({ ...backgroundProps }) {
     asset_7,
     asset_8,
     asset_9,
+    asset_10,
   ];
+
+  const mobileArray = [
+    asset_1_mobile,
+    asset_2_mobile,
+    asset_3_mobile,
+    asset_4_mobile,
+    asset_5_mobile,
+    asset_6_mobile,
+    asset_7_mobile,
+    asset_8_mobile,
+    asset_9_mobile,
+    asset_10_mobile,
+  ];
+
+  // Check for mobile viewport
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Common breakpoint for mobile
+    };
+
+    // Initial check
+    checkMobile();
+
+    // Add resize listener
+    window.addEventListener('resize', checkMobile);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     if (backgroundClick > backgroundArray.length - 1) {
       setBackgroundClick(0);
     }
-    if (backgroundClick === 0) {
-      setUrl(asset_1);
-    } else if (backgroundClick === 1) {
-      setUrl(asset_2);
-    } else if (backgroundClick === 2) {
-      setUrl(asset_3);
-    } else if (backgroundClick === 3) {
-      setUrl(asset_4);
-    } else if (backgroundClick === 4) {
-      setUrl(asset_5);
-    } else if (backgroundClick === 5) {
-      setUrl(asset_6);
-    } else if (backgroundClick === 6) {
-      setUrl(asset_7);
-    } else if (backgroundClick === 7) {
-      setUrl(asset_8);
-    } else if (backgroundClick === 8) {
-      setUrl(asset_9);
-    } else if (backgroundClick === 9) {
-      setUrl(asset_10);
-    }
-  }, [backgroundClick, setBackgroundClick]);
+
+    // Use the appropriate array based on device type
+    const currentArray = isMobile ? mobileArray : backgroundArray;
+    setUrl(currentArray[backgroundClick]);
+  }, [backgroundClick, setBackgroundClick, isMobile]);
+
   return (
     <div className={styles.bg}>
       <div className={styles.imageContainer}>
         <div className={styles.background}>
-          <img src={url}></img>
+          <img src={url} alt="Background" />
         </div>
       </div>
     </div>

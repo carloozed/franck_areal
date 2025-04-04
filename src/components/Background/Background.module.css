@@ -5,19 +5,55 @@
     left: 0;
     min-height: 100svh;
     min-width: 100svw;
+    height: 100%;
 }
 
 .imageContainer {
     position: relative;
 }
 
-.bg {
-
-    height: 100%;
-}
 
 
 .background img {
-    height: 100vh;
+    height: 100svh;
     width: 100%;
 }
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 48rem) {
+
+
+
+    .bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageContainer {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+
+
+
+    .background img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 48rem) and (max-width: 74rem) {}
+
+
+@media (min-width: 48rem) and (max-width: 74rem) and (orientation: portrait) {}
