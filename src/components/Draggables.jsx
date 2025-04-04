@@ -11,7 +11,7 @@ export default function Draggables() {
 
   const updateDropDistance = () => {
     const isMobile = window.innerWidth < 768;
-    setDropDistance(isMobile ? 85 : 130);
+    setDropDistance(isMobile ? 85 : 100);
   };
 
   useEffect(() => {
