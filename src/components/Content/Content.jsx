@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Content.module.css';
 
 import main from '../../assets/images/maintitle.png';
-import location from '../../assets/images/location.png';
+import location from '../../assets/images/address_new.png';
 
 import ProgramComponent from './Program/ProgramComponent';
 import AboutComponent from './About/AboutComponent';
