@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from './Program.module.css';
 
-import program from './program';
+import { program, programDesktop } from './program';
 
 import programImage from '../../../assets/images/program_1.png';
 
 export default function ProgramComponent({ ...contentProps }) {
   const { activeNavigation, setActiveNavigation } = contentProps;
+  const [isDesktop, setIsDesktop] = useState();
+  const [programData, setProgramData] = useState(program);
+
+  useEffect(() => {
+    window.innerWidth > 768 ? setIsDesktop(true) : setIsDesktop(false);
+  }, []);
+
+  useEffect(() => {
+    isDesktop ? setProgramData(programDesktop) : setProgramData(program);
+  }, [isDesktop]);
 
   return (
     <div
@@ -21,15 +31,19 @@ export default function ProgramComponent({ ...contentProps }) {
         <img src={programImage} onClick={() => setActiveNavigation('')} />
       </div>
       <div className={styles.events}>
-        {program.map((day, index) => (
-          <div
-            className={`${styles.event} ${day.blur && styles.blurry}`}
-            key={index}
-          >
+        {programData.map((day, index) => (
+          <div className={styles.event} key={index}>
             <div className={styles.leftSide}>
-              <h2>{day.date}</h2>
+              <div>
+                <h2>{day.date}</h2>
+              </div>
             </div>
             <div className={styles.rightSide}>
+              {day.blur && (
+                <div className={styles.overlay}>
+                  <h3>SOON</h3>
+                </div>
+              )}
               <h3>{day.label}</h3>
               <div>
                 {day.acts.map((act, index) => {
