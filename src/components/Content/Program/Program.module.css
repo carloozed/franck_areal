@@ -4,7 +4,7 @@
     padding: 0 calc(2rem + 6vw);
     position: fixed;
     z-index: 2;
-    min-height: 100svh;
+    height: 100svh;
     width: 100svw;
     display: flex;
     gap: calc((2rem + 4vw) / 4);
@@ -56,7 +56,6 @@
 .events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
 }
 
 .event {
@@ -128,7 +127,7 @@
 }
 
 .act h4 {
-    font-size: 0.8rem;
+    font-size: calc(0.35rem + 0.35vw);
 }
 
 .actName {
@@ -152,7 +151,12 @@
         opacity: 0;
         transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
         pointer-events: none;
-        overflow-y: scroll !important;
+        overflow: scroll;
+
+    }
+
+    .content {
+        overflow: scroll;
     }
 
 
@@ -187,7 +191,7 @@
     .events {
         display: flex;
         flex-direction: column;
-        gap: calc((2rem + 4vw) / 8);
+        overflow: scroll;
     }
 
     .event {
@@ -236,11 +240,11 @@
     }
 
     .act h4 {
-        font-size: calc(0.4rem + 0.6vh);
+        font-size: calc(0.3rem + 0.6vh);
     }
 
     .actName {
-        font-family: var(--regular-font);
+        font-family: var(--bold-font);
         text-transform: uppercase;
     }
 
