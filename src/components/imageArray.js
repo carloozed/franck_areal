@@ -11,7 +11,6 @@ import bluenice from '../assets/images/fallimages/bluenice.webp';
 import omgblueblue from '../assets/images/fallimages/omgblueblue.webp';
 import asset_14 from '../assets/images/fallimages/asset_14.webp';
 import asset_17 from '../assets/images/fallimages/asset_17.webp';
-import omgfyellow from '../assets/images/fallimages/omgfyellow.webp';
 import dk from '../assets/images/fallimages/dk.webp';
 
 export const imageArray = [
@@ -28,6 +27,5 @@ export const imageArray = [
   omgblueblue,
   asset_14,
   asset_17,
-  omgfyellow,
   dk,
 ];

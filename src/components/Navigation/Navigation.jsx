@@ -9,7 +9,6 @@ import Right from './components/Right';
 
 export default function Navigation({ ...navigationProps }) {
   const {
-    setNavigationItemHovered,
     setBackgroundClick,
     activeNavigation,
     setActiveNavigation,
@@ -20,16 +19,12 @@ export default function Navigation({ ...navigationProps }) {
       <div className={styles.navcontainer}>
         <div
           className={styles.navitem}
-          onMouseEnter={() => setNavigationItemHovered('top')}
-          onMouseLeave={() => setNavigationItemHovered('')}
           onClick={() => setBackgroundClick(backgroundClick + 1)}
         >
           <Top />
         </div>
         <div
           className={styles.navitem}
-          onMouseEnter={() => setNavigationItemHovered('program')}
-          onMouseLeave={() => setNavigationItemHovered('')}
           onClick={() => {
             activeNavigation === 'program'
               ? setActiveNavigation('')
@@ -40,8 +35,6 @@ export default function Navigation({ ...navigationProps }) {
         </div>
         <div
           className={styles.navitem}
-          onMouseEnter={() => setNavigationItemHovered('about')}
-          onMouseLeave={() => setNavigationItemHovered('')}
           onClick={() => {
             activeNavigation === 'about'
               ? setActiveNavigation('')
@@ -50,11 +43,7 @@ export default function Navigation({ ...navigationProps }) {
         >
           <Bottom />
         </div>
-        <div
-          className={styles.navitem}
-          onMouseEnter={() => setNavigationItemHovered('insta')}
-          onMouseLeave={() => setNavigationItemHovered('')}
-        >
+        <div className={styles.navitem}>
           <a href="https://www.instagram.com/omg_franck/" target="_blank">
             <Right />
           </a>

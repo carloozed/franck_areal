@@ -28,7 +28,6 @@ export default function ProgramComponent({ ...contentProps }) {
       <div className={styles.content}>
         <div className={styles.titleContainer}>
           <img src={programImage} onClick={() => setActiveNavigation('')} />
-          <img src={programImage} onClick={() => setActiveNavigation('')} />
         </div>
         <div className={styles.events}>
           {programData.map((day, index) => (
@@ -60,7 +59,6 @@ export default function ProgramComponent({ ...contentProps }) {
           ))}
         </div>{' '}
         <div className={styles.titleContainer}>
-          <img src={programImage} onClick={() => setActiveNavigation('')} />
           <img src={programImage} onClick={() => setActiveNavigation('')} />
         </div>
       </div>
