@@ -56,17 +56,17 @@
 .events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: fit-content;
 }
 
 .event {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
 }
 
 
 .leftSide {
-
     display: flex;
     align-items: center;
 }

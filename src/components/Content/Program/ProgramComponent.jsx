@@ -38,18 +38,18 @@ export default function ProgramComponent({ ...contentProps }) {
                 </div>
               </div>
               <div className={styles.rightSide}>
-                {day.blur && (
+                {/* {day.blur && (
                   <div className={styles.overlay}>
                     <h3>SOON</h3>
                   </div>
-                )}
+                )} */}
                 <h3>{day.label}</h3>
                 <div>
                   {day.acts.map((act, index) => {
                     return (
                       <div key={index} className={styles.act}>
                         <h4 className={styles.actName}>{act[0]}</h4>
-                        <h4>{act[1]}</h4>
+                        {/* <h4>{act[1]}</h4> */}
                       </div>
                     );
                   })}
