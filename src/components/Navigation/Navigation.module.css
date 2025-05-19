@@ -19,8 +19,9 @@
     cursor: pointer;
 }
 
-.navitem svg {
-    height: calc(2.4rem + 1.5vw);
+.navitem img {
+    height: calc(1.5rem + 3vw);
+    width: auto;
     pointer-events: all;
 }
 
@@ -56,6 +57,12 @@
 
 /* Mobile */
 @media (max-width: 48rem) {
+
+    .navitem img {
+        height: calc(1.5rem + 3vh);
+        width: auto;
+        pointer-events: all;
+    }
 
     .navitem:nth-of-type(2) {
 

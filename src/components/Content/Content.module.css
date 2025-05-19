@@ -22,9 +22,18 @@
 
 
 .main {
-
+    display: flex;
+    flex-direction: column;
     top: 10%;
     left: 5%;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.main img:nth-of-type(1) {
+    height: calc(2rem + 4vw);
+    width: auto;
+    object-fit: contain;
 }
 
 .location {
@@ -59,7 +68,7 @@
 
     .location {
 
-        top: 25%;
+        top: 30%;
         left: 10%;
 
     }
