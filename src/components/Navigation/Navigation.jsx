@@ -21,7 +21,9 @@ export default function Navigation({ ...navigationProps }) {
           className={styles.navitem}
           onClick={() => setBackgroundClick(backgroundClick + 1)}
         >
-          <Top />
+          <a href="https://mp3.radiox.ch/standard.mp3" target="_blank">
+            <Top />
+          </a>
         </div>
         <div
           className={styles.navitem}
