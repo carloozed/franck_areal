@@ -145,7 +145,7 @@
 /* Mobile */
 @media (max-width: 48rem) {
     .container {
-        padding: 0 calc(1.5rem + 6vw);
+        padding: calc(1.5rem + 2vw);
         display: flex;
         gap: calc((2rem + 4vw) / 8);
         opacity: 0;
