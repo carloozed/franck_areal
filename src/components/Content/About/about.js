@@ -6,7 +6,7 @@ const aboutContent = [
     second_text: `OMG Franck! ist als eine gemeinsame Idee von <a href="https://radiox.ch/" target="_blank">Radio X Basel <span>→</span></a>, <a href="https://www.franckareal.ch/" target="_blank">Franck Areal <span>→</span></a>, dem Design-Studio <a href="https://ozelot.ltd/" target="_blank">Ozelot Studios <span>→</span></a> sowie dem Gastronomie-Kollektiv <a href="https://www.instagram.com/nochefstudios/" target="_blank">No Chefs Studios <span>→</span></a> entstanden. Ziel ist es, während einer Woche gemeinsam mit den Künstler:innen, Designer:innen, Köch:innen, DJs und Labels ein «Kollektiv der Kollektive» zu gründen. Wir wollen in sechs Tagen einen Ort der respektvollen Begegnung und gegenseitigen Inspiration erschaffen. Bereits in den frühen 1990ern wurden urbane Freiräume in Orte für kreative Entfaltung verwandelt. Verlassenen Räumen wurde neues Leben eingehaucht. Let’s create our world in six days. `,
     date: '16. bis 21.06.2025',
     time: 'täglich ab 16 Uhr',
-    entry: 'Eintritt auf Kollektivbasis',
+    entry: 'Eintritt auf Kollektenbasis',
     location:
       '<a href="https://maps.app.goo.gl/MzkXGDcafFnTuwei9">Franck Areal, Horburgstrasse 103, 4057 Basel <span>→</span></a>',
     transportation:
