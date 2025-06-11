@@ -54,10 +54,21 @@
 }
 
 .events {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: scroll;
 }
+
+.events img {
+    width: 100%;
+    height: auto;
+    scale: 0.4;
+
+}
+
+
 
 .event {
     display: grid;
@@ -171,6 +182,13 @@
         font-size: calc(1rem + 1.5vh);
         writing-mode: vertical-lr;
         text-orientation: mixed;
+    }
+
+    .events img {
+        width: 100%;
+        height: auto;
+        scale: 0.95;
+        outline: 0px;
     }
 
 
