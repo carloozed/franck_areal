@@ -30,7 +30,11 @@ export default function Draggables() {
         {dropDistance !== 0 &&
           imageArray.map((image, index) => (
             <DraggableComponent key={index} dropDistance={dropDistance}>
-              <img src={image} alt={`Dropimage ${index}`} />
+              <img
+                src={image.url}
+                alt={`Dropimage ${index}`}
+                style={{ scale: image.name === 'specialthanksto' ? '2' : '1' }}
+              />
             </DraggableComponent>
           ))}
       </div>

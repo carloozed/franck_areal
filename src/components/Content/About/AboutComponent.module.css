@@ -56,6 +56,20 @@
 }
 
 
+.specialThanks {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.25rem + 0.25vw)
+}
+
+
+
+.specialThanks div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 
 .section {
     display: flex;
