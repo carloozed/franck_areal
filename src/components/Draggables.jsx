@@ -33,7 +33,9 @@ export default function Draggables() {
               <img
                 src={image.url}
                 alt={`Dropimage ${index}`}
-                style={{ scale: image.name === 'specialthanksto' ? '2' : '1' }}
+                style={{
+                  display: image.name === 'specialthanksto' ? 'none' : 'block',
+                }}
               />
             </DraggableComponent>
           ))}
