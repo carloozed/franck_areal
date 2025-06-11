@@ -38,16 +38,16 @@ export default function AboutComponent({ ...contentProps }) {
             </div>
           </div>
         ))}
-      </div>
-      <div className={styles.specialThanks}>
-        <h3>Special Thanks to</h3>
-        <div>
-          <h4>Swisslos Fonds Basel-Stadt</h4>
-          <h4>Pro Helvetia</h4>
-          <h4>Förderverein Franck</h4>
-          <h4>Eckenstein-Geigy Stiftung</h4>
-          <h4>Sophie und Karl Binding Stiftung</h4>
-          <h4>Stiftung für Radio und Kultur Schweiz SRKS & Swissperform</h4>
+        <div className={styles.specialThanks}>
+          <h3>Special Thanks to</h3>
+          <div>
+            <p>Swisslos Fonds Basel-Stadt</p>
+            <p>Pro Helvetia</p>
+            <p>Förderverein Franck</p>
+            <p>Eckenstein-Geigy Stiftung</p>
+            <p>Sophie und Karl Binding Stiftung</p>
+            <p>Stiftung für Radio und Kultur Schweiz SRKS & Swissperform</p>
+          </div>
         </div>
       </div>
     </div>
