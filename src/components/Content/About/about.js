@@ -10,7 +10,9 @@ const aboutContent = [
     location:
       '<a href="https://maps.app.goo.gl/MzkXGDcafFnTuwei9">Franck Areal, Horburgstrasse 103, 4057 Basel <span>→</span></a>',
     transportation:
-      'Wie komme ich hin: Tram 14, Station Brombacherstrasse oder Velo. Parkplätze hat es keine.',
+      'Wie komme ich hin: Tram 14, Station Brombacherstrasse oder Velo. Parkplätze hat es keine. ',
+    specialThanks:
+      '<a>Speziellen Dank an: </a>Swisslos Fonds Basel-Stadt,Pro Helvetia, Förderverein Franck, Eckenstein-Geigy Stiftung, Sophie und Karl Binding Stiftung, Stiftung für Radio und Kultur Schweiz SRKS & Swissperform',
   },
   {
     lang: 'en',
@@ -24,6 +26,7 @@ const aboutContent = [
       '<a href="https://maps.app.goo.gl/MzkXGDcafFnTuwei9">Franck Areal, Horburgstrasse 103, 4057 Basel <span>→</span></a>',
     transportation:
       'Tram 14 get out at Brombacherstrasse or by bike. No parking available.',
+    specialThanks: `<a>Special thanks to:</a> Swisslos Fonds Basel-Stadt,Pro Helvetia, Förderverein Franck, Eckenstein-Geigy Stiftung, Sophie und Karl Binding Stiftung, Stiftung für Radio und Kultur Schweiz SRKS & Swissperform`,
   },
 ];
 

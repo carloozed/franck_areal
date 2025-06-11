@@ -35,20 +35,12 @@ export default function AboutComponent({ ...contentProps }) {
             <div className={styles.locationInformation}>
               <p dangerouslySetInnerHTML={{ __html: section.location }} />
               <p>{section.transportation}</p>
+              <p
+                dangerouslySetInnerHTML={{ __html: section.specialThanks }}
+              ></p>
             </div>
           </div>
         ))}
-        <div className={styles.specialThanks}>
-          <h3>Special Thanks to</h3>
-          <div>
-            <p>Swisslos Fonds Basel-Stadt</p>
-            <p>Pro Helvetia</p>
-            <p>Förderverein Franck</p>
-            <p>Eckenstein-Geigy Stiftung</p>
-            <p>Sophie und Karl Binding Stiftung</p>
-            <p>Stiftung für Radio und Kultur Schweiz SRKS & Swissperform</p>
-          </div>
-        </div>
       </div>
     </div>
   );
